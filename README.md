@@ -27,5 +27,5 @@ AsciiScript.exec(<code here>, function(result){
 # Example
 Hello: 
 ```
-34 72 101 108 108 111 33 34
+34-72-101-108-108-111-33-34
 ```
