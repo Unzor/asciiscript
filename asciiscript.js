@@ -987,23 +987,21 @@ function run(code){
 
 /* AsciiScript executor */
 var AsciiScript = {
-        exec: function(code) {
+        exec: function(code, callback) {
                 var result = "";
                 var int = 0;
                 var tokens = window.code.split(' ');
             
-            return new Promise((resolve, reject) => {
                 tokens.forEach(function(entry) {
                     int = int + 1;
                     var character = String.fromCharCode(parseInt(entry));
                     result = result + character;
                     if (int == tokens.length) {
                         sandbox.callback = function(a) {
-                            resolve(a);
+                           callback(a);
                         };
                         run(result);
                     }
-                })
             })
         }
 }
