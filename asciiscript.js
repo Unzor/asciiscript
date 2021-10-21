@@ -998,7 +998,7 @@ var AsciiScript = {
                     result = result + character;
                     if (int == tokens.length) {
                         sandbox.callback = function(a) {
-                           callback(a);
+                           callback(a.replaceAll("&nbsp;", "\u00a0"));
                         };
                         run(result);
                     }
