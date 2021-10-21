@@ -990,7 +990,7 @@ var AsciiScript = {
         exec: function(code, callback) {
                 var result = "";
                 var int = 0;
-                var tokens = code.split(' ');
+                var tokens = code.split('-');
             
                 tokens.forEach(function(entry) {
                     int = int + 1;
