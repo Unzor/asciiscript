@@ -2,7 +2,7 @@
 A simple and minimalistic program that translates ASCII chars to a string and then evaluates them.
 
 # How it works:
-#1: It splits every space into an object
+#1: It splits every hyphen into an object
 
 #2: Parse each entry as a number
 
