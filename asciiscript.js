@@ -988,11 +988,11 @@ function run(code){
 /* AsciiScript executor */
 var AsciiScript = {
         exec: function(code) {
+            window.code=code;
             return new Promise((resolve, reject) => {
                 var result = "";
-                var code = code;
                 var int = 0;
-                var tokens = code.split(' ');
+                var tokens = window.code.split(' ');
                 tokens.forEach(function(entry) {
                     int = int + 1;
                     var character = String.fromCharCode(parseInt(entry));
