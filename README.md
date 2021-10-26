@@ -23,6 +23,16 @@ AsciiScript.exec(<code here>, function(result){
 // Do something with the result, will be returned as string
 });
 ```
+# How to generate code
+Run this in your terminal:
+```
+npx asciiscript-translator \"YOUR STRING HERE\"
+```
+Keep the backslashes, otherwise your Asciiscript code will not work.
+It should generate a string like this:
+```
+34-89-79-85-82
+```
 
 # Example
 Hello: 
