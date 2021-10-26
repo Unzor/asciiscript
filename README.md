@@ -24,7 +24,7 @@ AsciiScript.exec(<code here>, function(result){
 });
 ```
 # How to generate code
-Run this in your terminal:
+Run this in your terminal to generate a string:
 ```
 npx asciiscript-translator \"YOUR STRING HERE\"
 ```
@@ -32,6 +32,10 @@ Keep the backslashes, otherwise your Asciiscript code will not work.
 It should generate a string like this:
 ```
 34-89-79-85-82
+```
+If you want to generate JavaScript code, use this:
+```
+npx asciiscript-translator "var h=1; h;"
 ```
 
 # Example
