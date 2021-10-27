@@ -37,7 +37,3 @@ var AsciiScript = {
             })
         }
 }
-
-AsciiScript.exec('99-111-110-115-111-108-101-46-108-111-103-40-39-121-101-115-39-41', function(a){
-  console.log(a);
-})
