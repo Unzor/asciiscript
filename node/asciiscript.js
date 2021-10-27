@@ -37,3 +37,5 @@ var AsciiScript = {
             })
         }
 }
+
+module.exports = { AsciiScript }
