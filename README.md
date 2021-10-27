@@ -24,22 +24,18 @@ AsciiScript.exec(<code here>, function(result){
 });
 ```
 # How to generate code
-Run this in your terminal to generate a string:
+Run this in your terminal to translate JavaScript code to Asciiscript:
 ```
-npx asciiscript-translator \"YOUR STRING HERE\"
+npx asciiscript-translator "console.log('Hello World!');"
 ```
 Keep the backslashes, otherwise your Asciiscript code will not work.
 It should generate a string like this:
 ```
-34-89-79-85-82
-```
-If you want to generate JavaScript code, use this:
-```
-npx asciiscript-translator "var h=1; h;"
+99-111-110-115-111-108-101-46-108-111-103-40-39-72-101-108-108-111-32-87-111-114-108-100-33-32-58-41-39-41
 ```
 
 # Example
 Hello: 
 ```
-34-72-101-108-108-111-33-34
+99-111-110-115-111-108-101-46-108-111-103-40-39-72-101-108-108-111-32-87-111-114-108-100-33-32-58-41-39-41
 ```
