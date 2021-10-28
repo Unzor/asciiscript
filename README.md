@@ -19,16 +19,18 @@ Asciiscript is currently only for browser, later it will be released to other pr
 
 # How to use
 ## Browser
-```
+```javascript
 AsciiScript.exec(<code here>, function(result){
 // Do something with the result, will be returned as string
 });
 ```
 ## NodeJS
+```javascript
 var { AsciiScript } = require('asciiscript');
 AsciiScript.exec(<code here>, function(result){
 // Do something with the result, will be returned as string
 });
+```
 # How to generate code
 Run this in your terminal to translate JavaScript code to Asciiscript:
 ```
