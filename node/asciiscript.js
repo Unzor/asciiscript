@@ -1,3 +1,19 @@
+/* Getting results */
+var logger={};
+console.defaultLog = console.log.bind(console);
+console.logs = [];
+console.log = function(){
+    // default &  console.log()
+    console.defaultLog.apply(console, arguments);
+    // new & array data
+    console.logs.push(Array.from(arguments));
+}
+logger.getLogs=function(){
+  return console.logs;
+}
+logger.clear=function(){
+  console.logs=[];
+}
 /* Code Sandboxing */
 function construct(constructor, args) {
   function F() {
@@ -33,6 +49,8 @@ var AsciiScript = {
                     result = result + character;
                     if (int == tokens.length) {
                         sandboxcode(result);
+                        callback(logger.getLogs().join('\n'));
+                        logger.clear();
                     }
             })
         }
