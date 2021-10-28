@@ -49,7 +49,9 @@ var AsciiScript = {
                     result = result + character;
                     if (int == tokens.length) {
                         sandboxcode(result);
+                        if (callback){
                         callback(logger.getLogs().join('\n'));
+                        }
                         logger.clear();
                     }
             })
