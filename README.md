@@ -18,11 +18,17 @@ A simple and minimalistic program that translates ASCII chars to a string and th
 Asciiscript is currently only for browser, later it will be released to other programming languages, like Python, NodeJS, C++, etc.
 
 # How to use
+## Browser
 ```
 AsciiScript.exec(<code here>, function(result){
 // Do something with the result, will be returned as string
 });
 ```
+## NodeJS
+var { AsciiScript } = require('asciiscript');
+AsciiScript.exec(<code here>, function(result){
+// Do something with the result, will be returned as string
+});
 # How to generate code
 Run this in your terminal to translate JavaScript code to Asciiscript:
 ```
